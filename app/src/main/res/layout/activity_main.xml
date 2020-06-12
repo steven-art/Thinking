@@ -6,13 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/activity_main_ami_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Vos amis"
+        app:layout_constraintEnd_toEndOf="@+id/activity_main_idea_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/activity_main_idea_btn"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <Button
+        android:id="@+id/activity_main_idea_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Déposez une idée"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="529dp" />
+
     <TextView
+        android:id="@+id/activity_main_titleOfApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Thinking"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="104dp" />
+
+    <TextView
+        android:id="@+id/activity_main_soustitleOfApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Partagez vos pensées"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="171dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
